@@ -1,7 +1,7 @@
 {
   "name": "aws-puppeteer-lambda",
   "version": "0.0.1",
-  "description": "Run puppeteer within lambda.",
+  "description": "Execute puppeteer scripts within the AWS Lambda environment.",
   "main": "index.js",
   "scripts": {
     "test": "mocha"

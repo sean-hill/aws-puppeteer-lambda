@@ -1,6 +1,6 @@
 # Puppeteer Lambda
 
-Execute puppeteer v1.3.0 scripts within the AWS Lambda environment.
+Execute [puppeteer](https://github.com/GoogleChrome/puppeteer) scripts within the AWS Lambda environment.
 
 ## Usage
 
@@ -9,11 +9,11 @@ const puppeteer = require('puppeteer')
 const { extract, cleanup } = require('aws-puppeteer-lambda')
 
 (async () => {
-  // Extract the headless chrome executable and return its path
-  // If a previous Lambda invocation has extracted the executable, it will be reused
+  // Extract the headless chrome executable and return its path.
+  // If a previous Lambda invocation has extracted the executable, it will be reused.
   const executablePath = await extract()
   
-  // Initialize a new browser instance with puppeteer to execute within Lambda
+  // Initialize a new browser instance with puppeteer to execute within Lambda.
   const browser = await puppeteer.launch({
     ignoreHTTPSErrors: true,
     args: [
@@ -33,7 +33,7 @@ const { extract, cleanup } = require('aws-puppeteer-lambda')
   await browser.close()
   
   // Cleanup the TMP folder after each execution otherwise Chromium's
-  // garbage will cause the Lambda container to run out of space
+  // garbage will cause the Lambda container to run out of space.
   await cleanup()
 })()
 ```
