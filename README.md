@@ -6,7 +6,7 @@ Execute puppeteer v1.3.0 scripts within the AWS Lambda environment.
 
 ```js
 const puppeteer = require('puppeteer')
-const { extract, cleanup } = require('puppeteer-lambda')
+const { extract, cleanup } = require('aws-puppeteer-lambda')
 
 (async () => {
   // Extract the headless chrome executable and return its path

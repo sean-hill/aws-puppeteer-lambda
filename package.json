@@ -6,6 +6,7 @@
   "scripts": {
     "test": "mocha"
   },
+  "homepage": "https://github.com/sean-hill/aws-puppeteer-lambda",
   "keywords": ["puppeteer", "lambda", "chrome", "headless", "node"],
   "author": "Sean Hill",
   "license": "ISC",
@@ -15,5 +16,9 @@
     "fs-extra": "^5.0.0",
     "glob": "^7.1.2",
     "mocha": "^5.1.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sean-hill/aws-puppeteer-lambda.git"
   }
 }
