@@ -1,0 +1,19 @@
+{
+  "name": "aws-puppeteer-lambda",
+  "version": "0.0.1",
+  "description": "Run puppeteer within lambda.",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": ["puppeteer", "lambda", "chrome", "headless", "node"],
+  "author": "Sean Hill",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^4.1.2",
+    "decompress": "^4.2.0",
+    "fs-extra": "^5.0.0",
+    "glob": "^7.1.2",
+    "mocha": "^5.1.1"
+  }
+}
