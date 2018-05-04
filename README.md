@@ -8,7 +8,7 @@ Execute [puppeteer](https://github.com/GoogleChrome/puppeteer) scripts within th
 const puppeteer = require('puppeteer')
 const { extract, cleanup } = require('aws-puppeteer-lambda')
 
-(async () => {
+;(async () => {
   // Extract the headless chrome executable and return its path.
   // If a previous Lambda invocation has extracted the executable, it will be reused.
   const executablePath = await extract()
