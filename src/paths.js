@@ -5,7 +5,7 @@ module.exports = {
   TMP: TEMP_PATH,
   COMPRESSED_EXECUTABLE: path.resolve(
     __dirname,
-    './revisions/headless_shell_r555668.zip'
+    './headless_shell_r555668.zip'
   ),
   EXECUTABLE: path.resolve(TEMP_PATH, './headless_shell')
 }
